@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metro>
+    <line name="A">
+        <direction id="1" from="Dejvická" to="Depo Hostivař" />
+        <direction id="2" from="Depo Hostivař" to="Dejvická" />
+        <station name="Dejvická">
+            <exit name="Tram směr Liboc, Veleslavín, Červený vrch">
+                <direction id="2">
+                    <position car="1" door="1" />
+                </direction>
+            </exit>
+            <exit name="Vítězné náměstí">
+                <direction id="2">
+                    <position car="4" door="4" />
+                    <position car="5" door="1" />
+                </direction>
+            </exit>
+        </station>
+        <station name="Hradčanská">
+            <exit>
+                <direction id="1">
+                    <position car="2" door="2" />
+                </direction>
+                <direction id="2">
+                    <position car="4" door="3" />
+                </direction>
+            </exit>
+        </station>
+    </line>
+    <line name="B">
+        
+    </line>
+    <line name="C">
+        
+    </line>
+</metro>
