@@ -44,6 +44,8 @@ public class MetroContext {
 			Node directionNode = directionNodes.item(i);
 			
 		}
+		
+		return null;
 	}
 
 }
