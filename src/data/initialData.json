@@ -1,0 +1,59 @@
+{
+  "lines": {
+    "A": {
+      "id": "A",
+      "name": "Linka A",
+      "color": "#00A550",
+      "stations": [
+        "Nemocnice Motol", "Petřiny", "Nádraží Veleslavín", "Bořislavka", "Dejvická", "Hradčanská",
+        "Malostranská", "Staroměstská", "Můstek", "Muzeum", "Náměstí Míru", "Jiřího z Poděbrad",
+        "Flora", "Želivského", "Strašnická", "Skalka", "Depo Hostivař"
+      ]
+    },
+    "B": {
+      "id": "B",
+      "name": "Linka B",
+      "color": "#FCD116",
+      "stations": [
+        "Zličín", "Stodůlky", "Luka", "Lužiny", "Hůrka", "Nové Butovice", "Jinonice", "Radlická",
+        "Smíchovské nádraží", "Anděl", "Karlovo náměstí", "Národní třída", "Můstek", "Náměstí Republiky",
+        "Florenc", "Křižíkova", "Invalidovna", "Palmovka", "Českomoravská", "Vysočanská", "Kolbenova",
+        "Hloubětín", "Rajská zahrada", "Černý Most"
+      ]
+    },
+    "C": {
+      "id": "C",
+      "name": "Linka C",
+      "color": "#C8102E",
+      "stations": [
+        "Letňany", "Prosek", "Střížkov", "Ládví", "Kobylisy", "Nádraží Holešovice", "Vltavská",
+        "Florenc", "Hlavní nádraží", "Muzeum", "I. P. Pavlova", "Vyšehrad", "Pražského povstání",
+        "Pankrác", "Budějovická", "Kačerov", "Roztyly", "Chodov", "Opatov", "Háje"
+      ]
+    }
+  },
+  "stations": {
+    "Můstek": {
+      "exits": {
+        "A": [
+          { "id": "vaclavak", "name": "Václavské náměstí", "car": 2, "door": 1 },
+          { "id": "transfer-b", "name": "Přestup na B", "car": 4, "door": 3 }
+        ],
+        "B": [
+          { "id": "jungmann", "name": "Jungmannovo náměstí", "car": 1, "door": 1 },
+          { "id": "transfer-a", "name": "Přestup na A", "car": 5, "door": 4 }
+        ]
+      }
+    },
+    "Muzeum": {
+      "exits": {
+        "A": [
+          { "id": "nm", "name": "Národní muzeum", "car": 3, "door": 2 }
+        ],
+        "C": [
+          { "id": "transfer-a", "name": "Přestup na A", "car": 2, "door": 4 }
+        ]
+      }
+    }
+  }
+}
