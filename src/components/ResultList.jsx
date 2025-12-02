@@ -37,7 +37,14 @@ function ResultList({ stationName, lineId, direction, data, onEdit }) {
     <div className="result-list">
       <div className="result-header">
         <h3>Exits for {stationName}</h3>
-        <button className="edit-btn" onClick={() => onEdit(null)}>+ Add New</button>
+        <button className="edit-btn" onClick={() => onEdit({
+          id: null,
+          name: '',
+          car: 0,
+          door: 0,
+          note: '',
+          _isReversed: reversed
+        })}>+ Add New</button>
       </div>
 
       {exits.length === 0 ? (

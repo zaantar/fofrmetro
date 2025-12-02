@@ -68,23 +68,18 @@ function App() {
 
     const exits = updatedData.stations[destination].exits[lineId];
 
-    // If editing in reversed direction, reverse the values back to canonical before saving
-    let canonicalExit = { ...exitToSave };
-    delete canonicalExit._isReversed; // Remove the flag
+    // Store the exit as-is, just remove the internal _isReversed flag
+    let cleanExit = { ...exitToSave };
+    delete cleanExit._isReversed;
 
-    if (exitToSave._isReversed && exitToSave.car !== 0 && exitToSave.door !== 0) {
-      canonicalExit.car = 6 - exitToSave.car;
-      canonicalExit.door = 5 - exitToSave.door;
-    }
-
-    const existingIndex = exits.findIndex(e => e.id === canonicalExit.id);
+    const existingIndex = exits.findIndex(e => e.id === cleanExit.id);
 
     if (existingIndex >= 0) {
       // Update existing
-      exits[existingIndex] = canonicalExit;
+      exits[existingIndex] = cleanExit;
     } else {
       // Add new
-      exits.push(canonicalExit);
+      exits.push(cleanExit);
     }
 
     try {

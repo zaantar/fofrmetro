@@ -5,6 +5,7 @@ function DataEditor({ stationName, lineId, initialData, onSave, onDelete, onCanc
   const [car, setCar] = useState(0);
   const [door, setDoor] = useState(0);
   const [note, setNote] = useState('');
+  const [isReversed, setIsReversed] = useState(false); // Added state for isReversed
 
   useEffect(() => {
     if (initialData) {
@@ -12,17 +13,19 @@ function DataEditor({ stationName, lineId, initialData, onSave, onDelete, onCanc
       setCar(initialData.car !== undefined ? initialData.car : 0);
       setDoor(initialData.door !== undefined ? initialData.door : 0);
       setNote(initialData.note || '');
+      setIsReversed(initialData.isReversed || false); // Initialize isReversed
     }
   }, [initialData]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     onSave({
-      id: initialData ? initialData.id : Date.now().toString(),
+      id: initialData?.id || Date.now().toString(),
       name,
       car: parseInt(car),
       door: parseInt(door),
-      note
+      note,
+      _isReversed: initialData?._isReversed || false
     });
   };
 
