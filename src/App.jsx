@@ -6,6 +6,7 @@ import StationSelect from './components/StationSelect';
 import ResultList from './components/ResultList';
 import DataEditor from './components/DataEditor';
 import DataControls from './components/DataControls';
+import ErrorBoundary from './components/ErrorBoundary';
 import './index.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     direction: null,
     destination: null
   });
+  const [editingExit, setEditingExit] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
 
   useEffect(() => {
@@ -45,6 +47,7 @@ function App() {
   const handleBack = () => {
     if (isEditing) {
       setIsEditing(false);
+      setEditingExit(null);
     } else if (selection.destination) {
       setSelection({ ...selection, destination: null });
     } else if (selection.direction) {
@@ -54,94 +57,123 @@ function App() {
     }
   };
 
-  const handleSaveExit = async (newExit) => {
-    console.log("handleSaveExit: called with", newExit);
+  const handleSaveExit = async (exitToSave) => {
     const { destination, lineId } = selection;
     const updatedData = { ...data };
 
-    // Ensure station entry exists
-    if (!updatedData.stations[destination]) {
-      updatedData.stations[destination] = { exits: {} };
-    }
-    if (!updatedData.stations[destination].exits) {
-      updatedData.stations[destination].exits = {};
-    }
-    if (!updatedData.stations[destination].exits[lineId]) {
-      updatedData.stations[destination].exits[lineId] = [];
+    // Ensure structure exists
+    if (!updatedData.stations[destination]) updatedData.stations[destination] = { exits: {} };
+    if (!updatedData.stations[destination].exits) updatedData.stations[destination].exits = {};
+    if (!updatedData.stations[destination].exits[lineId]) updatedData.stations[destination].exits[lineId] = [];
+
+    const exits = updatedData.stations[destination].exits[lineId];
+    const existingIndex = exits.findIndex(e => e.id === exitToSave.id);
+
+    if (existingIndex >= 0) {
+      // Update existing
+      exits[existingIndex] = exitToSave;
+    } else {
+      // Add new
+      exits.push(exitToSave);
     }
 
-    updatedData.stations[destination].exits[lineId].push(newExit);
-
-    // No need to setData here, the subscription will update it
     try {
-      console.log("handleSaveExit: calling saveStoredData...");
       await saveData(updatedData);
-      console.log("handleSaveExit: saveStoredData success");
       setIsEditing(false);
+      setEditingExit(null);
     } catch (e) {
       console.error("handleSaveExit: error saving", e);
-      alert("Failed to save exit. Check console.");
+      alert("Failed to save exit.");
+    }
+  };
+
+  const handleDeleteExit = async (exitId) => {
+    if (!window.confirm("Are you sure you want to delete this exit?")) return;
+
+    const { destination, lineId } = selection;
+    const updatedData = { ...data };
+    const exits = updatedData.stations[destination].exits[lineId];
+
+    updatedData.stations[destination].exits[lineId] = exits.filter(e => e.id !== exitId);
+
+    try {
+      await saveData(updatedData);
+      setIsEditing(false);
+      setEditingExit(null);
+    } catch (e) {
+      console.error("handleDeleteExit: error deleting", e);
+      alert("Failed to delete exit.");
     }
   };
 
   const currentLine = selection.lineId ? data.lines[selection.lineId] : null;
 
   return (
-    <div className="app-container">
-      <header className="app-header">
-        <h1 onClick={() => setSelection({ lineId: null, direction: null, destination: null })} style={{ cursor: 'pointer' }}>
-          Fofrmetro
-        </h1>
-      </header>
+    <ErrorBoundary>
+      <div className="app-container">
+        <header className="app-header">
+          <h1 onClick={() => setSelection({ lineId: null, direction: null, destination: null })} style={{ cursor: 'pointer' }}>
+            Fofrmetro
+          </h1>
+        </header>
 
-      <main>
-        {!selection.lineId && (
-          <>
-            <LineSelect lines={data.lines} onSelect={handleLineSelect} />
-            <DataControls data={data} onImport={setData} />
-          </>
-        )}
+        <main>
+          {!selection.lineId && (
+            <>
+              <LineSelect lines={data.lines} onSelect={handleLineSelect} />
+              <DataControls data={data} onImport={setData} />
+            </>
+          )}
 
-        {selection.lineId && !selection.direction && (
-          <DirectionSelect
-            line={currentLine}
-            onSelect={handleDirectionSelect}
-            onBack={handleBack}
-          />
-        )}
+          {selection.lineId && !selection.direction && (
+            <DirectionSelect
+              line={currentLine}
+              onSelect={handleDirectionSelect}
+              onBack={handleBack}
+            />
+          )}
 
-        {selection.lineId && selection.direction && !selection.destination && (
-          <StationSelect
-            line={currentLine}
-            direction={selection.direction}
-            onSelect={handleStationSelect}
-            onBack={handleBack}
-          />
-        )}
+          {selection.lineId && selection.direction && !selection.destination && (
+            <StationSelect
+              line={currentLine}
+              direction={selection.direction}
+              onSelect={handleStationSelect}
+              onBack={handleBack}
+            />
+          )}
 
-        {selection.destination && !isEditing && (
-          <div className="result-view">
-            <button className="back-btn" onClick={handleBack}>&larr; Back</button>
-            <ResultList
+          {selection.destination && !isEditing && (
+            <div className="result-view">
+              <button className="back-btn" onClick={handleBack}>&larr; Back</button>
+              <ResultList
+                stationName={selection.destination}
+                lineId={selection.lineId}
+                direction={selection.direction}
+                data={data}
+                onEdit={(exit) => {
+                  setEditingExit(exit);
+                  setIsEditing(true);
+                }}
+              />
+            </div>
+          )}
+
+          {selection.destination && isEditing && (
+            <DataEditor
               stationName={selection.destination}
               lineId={selection.lineId}
-              direction={selection.direction}
-              data={data}
-              onEdit={() => setIsEditing(true)}
+              initialData={editingExit}
+              onSave={handleSaveExit}
+              onDelete={handleDeleteExit}
+              onCancel={() => {
+                setIsEditing(false);
+                setEditingExit(null);
+              }}
             />
-          </div>
-        )}
-
-        {selection.destination && isEditing && (
-          <DataEditor
-            stationName={selection.destination}
-            lineId={selection.lineId}
-            onSave={handleSaveExit}
-            onCancel={() => setIsEditing(false)}
-          />
-        )}
-      </main>
-    </div >
+          )}
+        </main>
+      </div>
+    </ErrorBoundary>
   );
 }
 

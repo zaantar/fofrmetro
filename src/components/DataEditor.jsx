@@ -1,79 +1,93 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-function DataEditor({ stationName, lineId, onSave, onCancel }) {
-    const [name, setName] = useState('');
-    const [car, setCar] = useState(1);
-    const [door, setDoor] = useState(1);
-    const [note, setNote] = useState('');
+function DataEditor({ stationName, lineId, initialData, onSave, onDelete, onCancel }) {
+  const [name, setName] = useState('');
+  const [car, setCar] = useState(0);
+  const [door, setDoor] = useState(0);
+  const [note, setNote] = useState('');
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        onSave({
-            id: Date.now().toString(), // Simple ID generation
-            name,
-            car: parseInt(car),
-            door: parseInt(door),
-            note
-        });
-    };
+  useEffect(() => {
+    if (initialData) {
+      setName(initialData.name || '');
+      setCar(initialData.car !== undefined ? initialData.car : 0);
+      setDoor(initialData.door !== undefined ? initialData.door : 0);
+      setNote(initialData.note || '');
+    }
+  }, [initialData]);
 
-    return (
-        <div className="data-editor">
-            <h2>Add Exit for {stationName}</h2>
-            <form onSubmit={handleSubmit}>
-                <div className="form-group">
-                    <label>Exit Name</label>
-                    <input
-                        type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        placeholder="e.g. Wenceslas Square"
-                        required
-                    />
-                </div>
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSave({
+      id: initialData ? initialData.id : Date.now().toString(),
+      name,
+      car: parseInt(car),
+      door: parseInt(door),
+      note
+    });
+  };
 
-                <div className="row">
-                    <div className="form-group">
-                        <label>Car (1-5)</label>
-                        <input
-                            type="number"
-                            min="1"
-                            max="5"
-                            value={car}
-                            onChange={(e) => setCar(e.target.value)}
-                            required
-                        />
-                    </div>
-                    <div className="form-group">
-                        <label>Door (1-4)</label>
-                        <input
-                            type="number"
-                            min="1"
-                            max="4"
-                            value={door}
-                            onChange={(e) => setDoor(e.target.value)}
-                            required
-                        />
-                    </div>
-                </div>
+  return (
+    <div className="data-editor">
+      <h2>{initialData ? 'Edit Exit' : 'Add Exit'} for {stationName}</h2>
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label>Exit Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="e.g. Wenceslas Square"
+            required
+          />
+        </div>
 
-                <div className="form-group">
-                    <label>Note (Optional)</label>
-                    <input
-                        type="text"
-                        value={note}
-                        onChange={(e) => setNote(e.target.value)}
-                        placeholder="e.g. Escalator up"
-                    />
-                </div>
+        <div className="row">
+          <div className="form-group">
+            <label>Car (0-5, 0=Unknown)</label>
+            <input
+              type="number"
+              min="0"
+              max="5"
+              value={car}
+              onChange={(e) => setCar(e.target.value)}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label>Door (0-4, 0=Unknown)</label>
+            <input
+              type="number"
+              min="0"
+              max="4"
+              value={door}
+              onChange={(e) => setDoor(e.target.value)}
+              required
+            />
+          </div>
+        </div>
 
-                <div className="actions">
-                    <button type="button" onClick={onCancel} className="cancel-btn">Cancel</button>
-                    <button type="submit" className="save-btn">Save Exit</button>
-                </div>
-            </form>
+        <div className="form-group">
+          <label>Note (Optional)</label>
+          <input
+            type="text"
+            value={note}
+            onChange={(e) => setNote(e.target.value)}
+            placeholder="e.g. Escalator up"
+          />
+        </div>
 
-            <style>{`
+        <div className="actions">
+          {initialData && (
+            <button type="button" onClick={() => onDelete(initialData.id)} className="delete-btn">
+              Delete
+            </button>
+          )}
+          <button type="button" onClick={onCancel} className="cancel-btn">Cancel</button>
+          <button type="submit" className="save-btn">Save Exit</button>
+        </div>
+      </form>
+
+      <style>{`
         .data-editor {
           background: var(--bg-secondary);
           padding: 1.5rem;
@@ -115,14 +129,31 @@ function DataEditor({ stationName, lineId, onSave, onCancel }) {
         .save-btn {
           background: var(--accent);
           color: white;
+          padding: 0.5rem 1rem;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
         }
         .cancel-btn {
           background: transparent;
           border: 1px solid var(--text-secondary);
+          color: var(--text-secondary);
+          padding: 0.5rem 1rem;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        .delete-btn {
+          background: #ff4444;
+          color: white;
+          border: none;
+          padding: 0.5rem 1rem;
+          border-radius: 4px;
+          cursor: pointer;
+          margin-right: auto;
         }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 }
 
 export default DataEditor;
