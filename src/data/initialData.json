@@ -5,9 +5,23 @@
       "name": "Linka A",
       "color": "#00A550",
       "stations": [
-        "Nemocnice Motol", "Petřiny", "Nádraží Veleslavín", "Bořislavka", "Dejvická", "Hradčanská",
-        "Malostranská", "Staroměstská", "Můstek", "Muzeum", "Náměstí Míru", "Jiřího z Poděbrad",
-        "Flora", "Želivského", "Strašnická", "Skalka", "Depo Hostivař"
+        "Nemocnice Motol",
+        "Petřiny",
+        "Nádraží Veleslavín",
+        "Bořislavka",
+        "Dejvická",
+        "Hradčanská",
+        "Malostranská",
+        "Staroměstská",
+        "Můstek",
+        "Muzeum",
+        "Náměstí Míru",
+        "Jiřího z Poděbrad",
+        "Flora",
+        "Želivského",
+        "Strašnická",
+        "Skalka",
+        "Depo Hostivař"
       ]
     },
     "B": {
@@ -15,10 +29,30 @@
       "name": "Linka B",
       "color": "#FCD116",
       "stations": [
-        "Zličín", "Stodůlky", "Luka", "Lužiny", "Hůrka", "Nové Butovice", "Jinonice", "Radlická",
-        "Smíchovské nádraží", "Anděl", "Karlovo náměstí", "Národní třída", "Můstek", "Náměstí Republiky",
-        "Florenc", "Křižíkova", "Invalidovna", "Palmovka", "Českomoravská", "Vysočanská", "Kolbenova",
-        "Hloubětín", "Rajská zahrada", "Černý Most"
+        "Zličín",
+        "Stodůlky",
+        "Luka",
+        "Lužiny",
+        "Hůrka",
+        "Nové Butovice",
+        "Jinonice",
+        "Radlická",
+        "Smíchovské nádraží",
+        "Anděl",
+        "Karlovo náměstí",
+        "Národní třída",
+        "Můstek",
+        "Náměstí Republiky",
+        "Florenc",
+        "Křižíkova",
+        "Invalidovna",
+        "Palmovka",
+        "Českomoravská",
+        "Vysočanská",
+        "Kolbenova",
+        "Hloubětín",
+        "Rajská zahrada",
+        "Černý Most"
       ]
     },
     "C": {
@@ -26,9 +60,26 @@
       "name": "Linka C",
       "color": "#C8102E",
       "stations": [
-        "Letňany", "Prosek", "Střížkov", "Ládví", "Kobylisy", "Nádraží Holešovice", "Vltavská",
-        "Florenc", "Hlavní nádraží", "Muzeum", "I. P. Pavlova", "Vyšehrad", "Pražského povstání",
-        "Pankrác", "Budějovická", "Kačerov", "Roztyly", "Chodov", "Opatov", "Háje"
+        "Letňany",
+        "Prosek",
+        "Střížkov",
+        "Ládví",
+        "Kobylisy",
+        "Nádraží Holešovice",
+        "Vltavská",
+        "Florenc",
+        "Hlavní nádraží",
+        "Muzeum",
+        "I. P. Pavlova",
+        "Vyšehrad",
+        "Pražského povstání",
+        "Pankrác",
+        "Budějovická",
+        "Kačerov",
+        "Roztyly",
+        "Chodov",
+        "Opatov",
+        "Háje"
       ]
     }
   },
@@ -36,22 +87,1104 @@
     "Můstek": {
       "exits": {
         "A": [
-          { "id": "vaclavak", "name": "Václavské náměstí", "car": 2, "door": 1 },
-          { "id": "transfer-b", "name": "Přestup na B", "car": 4, "door": 3 }
+          {
+            "id": "e1",
+            "name": "Václavské náměstí (dolní část)",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Vodičkova, Jindřišská",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e3",
+            "name": "ulice Na Příkopě",
+            "car": 1,
+            "door": 1
+          }
         ],
         "B": [
-          { "id": "jungmann", "name": "Jungmannovo náměstí", "car": 1, "door": 1 },
-          { "id": "transfer-a", "name": "Přestup na A", "car": 5, "door": 4 }
+          {
+            "id": "e1",
+            "name": "Václavské náměstí (Můstek)",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "Jungmannovo náměstí",
+            "car": 1,
+            "door": 1
+          }
         ]
       }
     },
     "Muzeum": {
       "exits": {
         "A": [
-          { "id": "nm", "name": "Národní muzeum", "car": 3, "door": 2 }
+          {
+            "id": "e1",
+            "name": "Václavské náměstí (horní část), Národní muzeum",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Vinohradská",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e3",
+            "name": "Čelakovského sady",
+            "car": 1,
+            "door": 1
+          }
         ],
         "C": [
-          { "id": "transfer-a", "name": "Přestup na A", "car": 2, "door": 4 }
+          {
+            "id": "e1",
+            "name": "Václavské náměstí (horní část), Národní muzeum",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Vinohradská",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e3",
+            "name": "Čelakovského sady",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Bořislavka": {
+      "exits": {
+        "A": [
+          {
+            "id": "e1",
+            "name": "ulice Evropská, Liberijská, Kladenská",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Evropská, Arabská",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e3",
+            "name": "ulice Horoměřická",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e4",
+            "name": "ulice Evropská (směr centrum)",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Dejvická": {
+      "exits": {
+        "A": [
+          {
+            "id": "e1",
+            "name": "Vítězné náměstí, ulice Evropská",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "Vítězné náměstí, ulice Šolínova",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e3",
+            "name": "Vítězné náměstí, technická univerzita",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e4",
+            "name": "Vítězné náměstí, autobusový terminál",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e5",
+            "name": "Vítězné náměstí, tramvajová zastávka",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e6",
+            "name": "Vítězné náměstí, ulice Svatovítská",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Flora": {
+      "exits": {
+        "A": [
+          {
+            "id": "e1",
+            "name": "ulice Vinohradská, Jičínská",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "obchodní centrum Flora",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e3",
+            "name": "ulice Přemyslovská",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e4",
+            "name": "ulice Hradecká",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Hradčanská": {
+      "exits": {
+        "A": [
+          {
+            "id": "e1",
+            "name": "ulice Milady Horákové, Dejvická",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Pod Kaštany",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e3",
+            "name": "ulice Tychonova",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e4",
+            "name": "vlakové nádraží Praha-Dejvice",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Depo Hostivař": {
+      "exits": {
+        "A": [
+          {
+            "id": "e1",
+            "name": "autobusový terminál, ulice Černokostelecká",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "parkoviště P+R",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Jiřího z Poděbrad": {
+      "exits": {
+        "A": [
+          {
+            "id": "e1",
+            "name": "náměstí Jiřího z Poděbrad, ulice Vinohradská",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "náměstí Jiřího z Poděbrad, ulice Slavíkova",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Malostranská": {
+      "exits": {
+        "A": [
+          {
+            "id": "e1",
+            "name": "Klárov, Valdštejnská zahrada",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "nábřeží Edvarda Beneše",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Nemocnice Motol": {
+      "exits": {
+        "A": [
+          {
+            "id": "e1",
+            "name": "areál FN Motol",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Kukulova",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Náměstí Míru": {
+      "exits": {
+        "A": [
+          {
+            "id": "e1",
+            "name": "Náměstí Míru, Divadlo na Vinohradech",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Korunní",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e3",
+            "name": "ulice Francouzská",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e4",
+            "name": "ulice Rumunská",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Nádraží Veleslavín": {
+      "exits": {
+        "A": [
+          {
+            "id": "e1",
+            "name": "autobusový terminál, ulice Evropská",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "vlakové nádraží Praha-Veleslavín",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e3",
+            "name": "ulice K Červenému vrchu",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Petřiny": {
+      "exits": {
+        "A": [
+          {
+            "id": "e1",
+            "name": "ulice Na Petřinách, sídliště Petřiny",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Brunclíkova",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Skalka": {
+      "exits": {
+        "A": [
+          {
+            "id": "e1",
+            "name": "ulice Na Padesátém, sídliště Skalka",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "autobusový terminál",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Strašnická": {
+      "exits": {
+        "A": [
+          {
+            "id": "e1",
+            "name": "ulice Starostrašnická, sídliště Strašnice",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice V Olšinách",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Staroměstská": {
+      "exits": {
+        "A": [
+          {
+            "id": "e1",
+            "name": "Staroměstské náměstí, ulice Kaprova",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "Rudolfinum, Alšovo nábřeží",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Želivského": {
+      "exits": {
+        "A": [
+          {
+            "id": "e1",
+            "name": "ulice Vinohradská (pošta)",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Vinohradská (hotel Don Giovanni)",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e3",
+            "name": "Nové židovské hřbitovy",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Anděl": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "ulice Plzeňská, Nádražní (Anděl)",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Na Knížecí, autobusový terminál",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Českomoravská": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "ulice Českomoravská, O2 Aréna",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "autobusový terminál",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Černý Most": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "autobusový terminál (nástupiště)",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Chlumecká, obchodní centrum",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Florenc": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "Autobusové nádraží Florenc",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Sokolovská",
+            "car": 1,
+            "door": 1
+          }
+        ],
+        "C": [
+          {
+            "id": "e1",
+            "name": "Autobusové nádraží Florenc",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Sokolovská",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Hloubětín": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "ulice Poděbradská, sídliště Hloubětín",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Hůrka": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "Sluneční náměstí, úřad MČ Praha 13",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Invalidovna": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "ulice Sokolovská, sídliště Invalidovna",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Jinonice": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "ulice Radlická, sídliště Jinonice",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Kolbenova": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "ulice Kolbenova",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Křižíkova": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "ulice Thámova, Křižíkova",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Luka": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "ulice Mukařovského, sídliště Luka",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Lužiny": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "ulice Archeologická, sídliště Lužiny",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Národní třída": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "ulice Spálená, Národní třída",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice M. D. Rettigové",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Nové Butovice": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "autobusový terminál, Sluneční náměstí",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Náměstí Republiky": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "Náměstí Republiky, Obecní dům",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "Masarykovo nádraží, ulice V Celnici",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Palmovka": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "ulice Na Žertvách, tramvaje",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "autobusový terminál",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Radlická": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "ulice Radlická, plavecký bazén",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Rajská zahrada": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "ulice Chlumecká, sídliště Černý Most",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Stodůlky": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "ulice Šostakovičovo náměstí, sídliště Stodůlky",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Smíchovské nádraží": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "ulice Nádražní, tramvaje",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "vlakové nádraží Praha-Smíchov",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Vysočanská": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "Náměstí OSN, ulice Sokolovská",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "vlakové nádraží Praha-Vysočany",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Zličín": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "autobusový terminál",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Řevnická, obchodní centrum",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Budějovická": {
+      "exits": {
+        "C": [
+          {
+            "id": "e1",
+            "name": "ulice Budějovická, Olbrachtova",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Vyskočilova, poliklinika",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Chodov": {
+      "exits": {
+        "C": [
+          {
+            "id": "e1",
+            "name": "Obchodní centrum Chodov",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Roztylská",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Háje": {
+      "exits": {
+        "C": [
+          {
+            "id": "e1",
+            "name": "autobusový terminál, sídliště Háje",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Opatovská",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Hlavní nádraží": {
+      "exits": {
+        "C": [
+          {
+            "id": "e1",
+            "name": "vlakové nádraží Praha-Hlavní nádraží",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "Vrchlického sady, ulice Opletalova",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "I. P. Pavlova": {
+      "exits": {
+        "C": [
+          {
+            "id": "e1",
+            "name": "náměstí I. P. Pavlova, ulice Sokolská",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "Tylovo náměstí, ulice Jugoslávská",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Kobylisy": {
+      "exits": {
+        "C": [
+          {
+            "id": "e1",
+            "name": "Kobyliské náměstí, ulice Pod Sídlištěm",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Nad Šutkou",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Kačerov": {
+      "exits": {
+        "C": [
+          {
+            "id": "e1",
+            "name": "autobusový terminál, ulice Michelská",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Ládví": {
+      "exits": {
+        "C": [
+          {
+            "id": "e1",
+            "name": "ulice Střelničná, sídliště Ládví",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Letňany": {
+      "exits": {
+        "C": [
+          {
+            "id": "e1",
+            "name": "Výstaviště Letňany, ulice Beranových",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "autobusový terminál",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Nádraží Holešovice": {
+      "exits": {
+        "C": [
+          {
+            "id": "e1",
+            "name": "vlakové nádraží Praha-Holešovice (jih)",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "vlakové nádraží Praha-Holešovice (sever), autobusový terminál",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Opatov": {
+      "exits": {
+        "C": [
+          {
+            "id": "e1",
+            "name": "Centrální park, sídliště Opatov",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Chilská",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Pankrác": {
+      "exits": {
+        "C": [
+          {
+            "id": "e1",
+            "name": "Obchodní centrum Arkády Pankrác",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Na Pankráci",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Pražského povstání": {
+      "exits": {
+        "C": [
+          {
+            "id": "e1",
+            "name": "Náměstí Hrdinů, ulice Na Pankráci",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Děkanská vinice I",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Prosek": {
+      "exits": {
+        "C": [
+          {
+            "id": "e1",
+            "name": "ulice Vysočanská, sídliště Prosek",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Prosecká",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Roztyly": {
+      "exits": {
+        "C": [
+          {
+            "id": "e1",
+            "name": "autobusový terminál, ulice Ryšavého",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "Lesopark, ulice Tomíčkova",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Střížkov": {
+      "exits": {
+        "C": [
+          {
+            "id": "e1",
+            "name": "ulice Vysočanská, sídliště Střížkov",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "ulice Lovosická",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Vltavská": {
+      "exits": {
+        "C": [
+          {
+            "id": "e1",
+            "name": "ulice Bubenská, tramvaje",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "nábřeží Kapitána Jaroše",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Vyšehrad": {
+      "exits": {
+        "C": [
+          {
+            "id": "e1",
+            "name": "Kongresové centrum Praha",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "Jedličkův ústav, ulice Na Pankráci",
+            "car": 1,
+            "door": 1
+          }
+        ]
+      }
+    },
+    "Karlovo náměstí": {
+      "exits": {
+        "B": [
+          {
+            "id": "e1",
+            "name": "Karlovo náměstí, ulice Resslova",
+            "car": 1,
+            "door": 1
+          },
+          {
+            "id": "e2",
+            "name": "Palackého náměstí, nábřeží",
+            "car": 1,
+            "door": 1
+          }
         ]
       }
     }
