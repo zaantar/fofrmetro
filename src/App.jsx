@@ -67,14 +67,24 @@ function App() {
     if (!updatedData.stations[destination].exits[lineId]) updatedData.stations[destination].exits[lineId] = [];
 
     const exits = updatedData.stations[destination].exits[lineId];
-    const existingIndex = exits.findIndex(e => e.id === exitToSave.id);
+
+    // If editing in reversed direction, reverse the values back to canonical before saving
+    let canonicalExit = { ...exitToSave };
+    delete canonicalExit._isReversed; // Remove the flag
+
+    if (exitToSave._isReversed && exitToSave.car !== 0 && exitToSave.door !== 0) {
+      canonicalExit.car = 6 - exitToSave.car;
+      canonicalExit.door = 5 - exitToSave.door;
+    }
+
+    const existingIndex = exits.findIndex(e => e.id === canonicalExit.id);
 
     if (existingIndex >= 0) {
       // Update existing
-      exits[existingIndex] = exitToSave;
+      exits[existingIndex] = canonicalExit;
     } else {
       // Add new
-      exits.push(exitToSave);
+      exits.push(canonicalExit);
     }
 
     try {

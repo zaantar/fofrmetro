@@ -50,7 +50,12 @@ function ResultList({ stationName, lineId, direction, data, onEdit }) {
           {exits.map((exit) => {
             const { car, door } = getDisplayPosition(exit);
             return (
-              <div key={exit.id} className="exit-card" onClick={() => onEdit(exit)} style={{ cursor: 'pointer' }}>
+              <div key={exit.id} className="exit-card" onClick={() => onEdit({
+                ...exit,
+                car,
+                door,
+                _isReversed: reversed  // Flag to know if we need to reverse on save
+              })} style={{ cursor: 'pointer' }}>
                 <div className="exit-info">
                   <span className="exit-name">{exit.name}</span>
                   {exit.note && <span className="exit-note">{exit.note}</span>}
