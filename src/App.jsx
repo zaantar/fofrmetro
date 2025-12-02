@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getStoredData, saveStoredData } from './utils/storage';
+import { subscribeToData, saveData } from './utils/storage';
 import LineSelect from './components/LineSelect';
 import DirectionSelect from './components/DirectionSelect';
 import StationSelect from './components/StationSelect';
@@ -18,7 +18,14 @@ function App() {
   const [isEditing, setIsEditing] = useState(false);
 
   useEffect(() => {
-    setData(getStoredData());
+    let unsubscribe = () => { };
+    const startSubscription = async () => {
+      unsubscribe = await subscribeToData((newData) => {
+        setData(newData);
+      });
+    };
+    startSubscription();
+    return () => unsubscribe();
   }, []);
 
   if (!data) return <div>Loading...</div>;
@@ -47,7 +54,8 @@ function App() {
     }
   };
 
-  const handleSaveExit = (newExit) => {
+  const handleSaveExit = async (newExit) => {
+    console.log("handleSaveExit: called with", newExit);
     const { destination, lineId } = selection;
     const updatedData = { ...data };
 
@@ -64,9 +72,16 @@ function App() {
 
     updatedData.stations[destination].exits[lineId].push(newExit);
 
-    setData(updatedData);
-    saveStoredData(updatedData);
-    setIsEditing(false);
+    // No need to setData here, the subscription will update it
+    try {
+      console.log("handleSaveExit: calling saveStoredData...");
+      await saveData(updatedData);
+      console.log("handleSaveExit: saveStoredData success");
+      setIsEditing(false);
+    } catch (e) {
+      console.error("handleSaveExit: error saving", e);
+      alert("Failed to save exit. Check console.");
+    }
   };
 
   const currentLine = selection.lineId ? data.lines[selection.lineId] : null;
@@ -126,7 +141,7 @@ function App() {
           />
         )}
       </main>
-    </div>
+    </div >
   );
 }
 

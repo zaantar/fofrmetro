@@ -90,34 +90,34 @@
           {
             "id": "e1",
             "name": "Václavské náměstí (dolní část)",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Vodičkova, Jindřišská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e3",
             "name": "ulice Na Příkopě",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ],
         "B": [
           {
             "id": "e1",
             "name": "Václavské náměstí (Můstek)",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "Jungmannovo náměstí",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -128,40 +128,40 @@
           {
             "id": "e1",
             "name": "Václavské náměstí (horní část), Národní muzeum",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Vinohradská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e3",
             "name": "Čelakovského sady",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ],
         "C": [
           {
             "id": "e1",
             "name": "Václavské náměstí (horní část), Národní muzeum",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Vinohradská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e3",
             "name": "Čelakovského sady",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -172,26 +172,26 @@
           {
             "id": "e1",
             "name": "ulice Evropská, Liberijská, Kladenská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Evropská, Arabská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e3",
             "name": "ulice Horoměřická",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e4",
             "name": "ulice Evropská (směr centrum)",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -202,38 +202,38 @@
           {
             "id": "e1",
             "name": "Vítězné náměstí, ulice Evropská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "Vítězné náměstí, ulice Šolínova",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e3",
             "name": "Vítězné náměstí, technická univerzita",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e4",
             "name": "Vítězné náměstí, autobusový terminál",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e5",
             "name": "Vítězné náměstí, tramvajová zastávka",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e6",
             "name": "Vítězné náměstí, ulice Svatovítská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -244,26 +244,26 @@
           {
             "id": "e1",
             "name": "ulice Vinohradská, Jičínská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "obchodní centrum Flora",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e3",
             "name": "ulice Přemyslovská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e4",
             "name": "ulice Hradecká",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -274,26 +274,26 @@
           {
             "id": "e1",
             "name": "ulice Milady Horákové, Dejvická",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Pod Kaštany",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e3",
             "name": "ulice Tychonova",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e4",
             "name": "vlakové nádraží Praha-Dejvice",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -304,14 +304,14 @@
           {
             "id": "e1",
             "name": "autobusový terminál, ulice Černokostelecká",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "parkoviště P+R",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -322,14 +322,14 @@
           {
             "id": "e1",
             "name": "náměstí Jiřího z Poděbrad, ulice Vinohradská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "náměstí Jiřího z Poděbrad, ulice Slavíkova",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -340,14 +340,14 @@
           {
             "id": "e1",
             "name": "Klárov, Valdštejnská zahrada",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "nábřeží Edvarda Beneše",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -358,14 +358,14 @@
           {
             "id": "e1",
             "name": "areál FN Motol",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Kukulova",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -376,26 +376,26 @@
           {
             "id": "e1",
             "name": "Náměstí Míru, Divadlo na Vinohradech",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Korunní",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e3",
             "name": "ulice Francouzská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e4",
             "name": "ulice Rumunská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -406,20 +406,20 @@
           {
             "id": "e1",
             "name": "autobusový terminál, ulice Evropská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "vlakové nádraží Praha-Veleslavín",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e3",
             "name": "ulice K Červenému vrchu",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -430,14 +430,14 @@
           {
             "id": "e1",
             "name": "ulice Na Petřinách, sídliště Petřiny",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Brunclíkova",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -448,14 +448,14 @@
           {
             "id": "e1",
             "name": "ulice Na Padesátém, sídliště Skalka",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "autobusový terminál",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -466,14 +466,14 @@
           {
             "id": "e1",
             "name": "ulice Starostrašnická, sídliště Strašnice",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice V Olšinách",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -484,14 +484,14 @@
           {
             "id": "e1",
             "name": "Staroměstské náměstí, ulice Kaprova",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "Rudolfinum, Alšovo nábřeží",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -502,20 +502,20 @@
           {
             "id": "e1",
             "name": "ulice Vinohradská (pošta)",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Vinohradská (hotel Don Giovanni)",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e3",
             "name": "Nové židovské hřbitovy",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -526,14 +526,14 @@
           {
             "id": "e1",
             "name": "ulice Plzeňská, Nádražní (Anděl)",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Na Knížecí, autobusový terminál",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -544,14 +544,14 @@
           {
             "id": "e1",
             "name": "ulice Českomoravská, O2 Aréna",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "autobusový terminál",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -562,14 +562,14 @@
           {
             "id": "e1",
             "name": "autobusový terminál (nástupiště)",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Chlumecká, obchodní centrum",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -580,28 +580,28 @@
           {
             "id": "e1",
             "name": "Autobusové nádraží Florenc",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Sokolovská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ],
         "C": [
           {
             "id": "e1",
             "name": "Autobusové nádraží Florenc",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Sokolovská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -612,8 +612,8 @@
           {
             "id": "e1",
             "name": "ulice Poděbradská, sídliště Hloubětín",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -624,8 +624,8 @@
           {
             "id": "e1",
             "name": "Sluneční náměstí, úřad MČ Praha 13",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -636,8 +636,8 @@
           {
             "id": "e1",
             "name": "ulice Sokolovská, sídliště Invalidovna",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -648,8 +648,8 @@
           {
             "id": "e1",
             "name": "ulice Radlická, sídliště Jinonice",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -660,8 +660,8 @@
           {
             "id": "e1",
             "name": "ulice Kolbenova",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -672,8 +672,8 @@
           {
             "id": "e1",
             "name": "ulice Thámova, Křižíkova",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -684,8 +684,8 @@
           {
             "id": "e1",
             "name": "ulice Mukařovského, sídliště Luka",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -696,8 +696,8 @@
           {
             "id": "e1",
             "name": "ulice Archeologická, sídliště Lužiny",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -708,14 +708,14 @@
           {
             "id": "e1",
             "name": "ulice Spálená, Národní třída",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice M. D. Rettigové",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -726,8 +726,8 @@
           {
             "id": "e1",
             "name": "autobusový terminál, Sluneční náměstí",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -738,14 +738,14 @@
           {
             "id": "e1",
             "name": "Náměstí Republiky, Obecní dům",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "Masarykovo nádraží, ulice V Celnici",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -756,14 +756,14 @@
           {
             "id": "e1",
             "name": "ulice Na Žertvách, tramvaje",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "autobusový terminál",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -774,8 +774,8 @@
           {
             "id": "e1",
             "name": "ulice Radlická, plavecký bazén",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -786,8 +786,8 @@
           {
             "id": "e1",
             "name": "ulice Chlumecká, sídliště Černý Most",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -798,8 +798,8 @@
           {
             "id": "e1",
             "name": "ulice Šostakovičovo náměstí, sídliště Stodůlky",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -810,14 +810,14 @@
           {
             "id": "e1",
             "name": "ulice Nádražní, tramvaje",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "vlakové nádraží Praha-Smíchov",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -828,14 +828,14 @@
           {
             "id": "e1",
             "name": "Náměstí OSN, ulice Sokolovská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "vlakové nádraží Praha-Vysočany",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -846,14 +846,14 @@
           {
             "id": "e1",
             "name": "autobusový terminál",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Řevnická, obchodní centrum",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -864,14 +864,14 @@
           {
             "id": "e1",
             "name": "ulice Budějovická, Olbrachtova",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Vyskočilova, poliklinika",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -882,14 +882,14 @@
           {
             "id": "e1",
             "name": "Obchodní centrum Chodov",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Roztylská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -900,14 +900,14 @@
           {
             "id": "e1",
             "name": "autobusový terminál, sídliště Háje",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Opatovská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -918,14 +918,14 @@
           {
             "id": "e1",
             "name": "vlakové nádraží Praha-Hlavní nádraží",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "Vrchlického sady, ulice Opletalova",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -936,14 +936,14 @@
           {
             "id": "e1",
             "name": "náměstí I. P. Pavlova, ulice Sokolská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "Tylovo náměstí, ulice Jugoslávská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -954,14 +954,14 @@
           {
             "id": "e1",
             "name": "Kobyliské náměstí, ulice Pod Sídlištěm",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Nad Šutkou",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -972,8 +972,8 @@
           {
             "id": "e1",
             "name": "autobusový terminál, ulice Michelská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -984,8 +984,8 @@
           {
             "id": "e1",
             "name": "ulice Střelničná, sídliště Ládví",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -996,14 +996,14 @@
           {
             "id": "e1",
             "name": "Výstaviště Letňany, ulice Beranových",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "autobusový terminál",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -1014,14 +1014,14 @@
           {
             "id": "e1",
             "name": "vlakové nádraží Praha-Holešovice (jih)",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "vlakové nádraží Praha-Holešovice (sever), autobusový terminál",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -1032,14 +1032,14 @@
           {
             "id": "e1",
             "name": "Centrální park, sídliště Opatov",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Chilská",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -1050,14 +1050,14 @@
           {
             "id": "e1",
             "name": "Obchodní centrum Arkády Pankrác",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Na Pankráci",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -1068,14 +1068,14 @@
           {
             "id": "e1",
             "name": "Náměstí Hrdinů, ulice Na Pankráci",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Děkanská vinice I",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -1086,14 +1086,14 @@
           {
             "id": "e1",
             "name": "ulice Vysočanská, sídliště Prosek",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Prosecká",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -1104,14 +1104,14 @@
           {
             "id": "e1",
             "name": "autobusový terminál, ulice Ryšavého",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "Lesopark, ulice Tomíčkova",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -1122,14 +1122,14 @@
           {
             "id": "e1",
             "name": "ulice Vysočanská, sídliště Střížkov",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "ulice Lovosická",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -1140,14 +1140,14 @@
           {
             "id": "e1",
             "name": "ulice Bubenská, tramvaje",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "nábřeží Kapitána Jaroše",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -1158,14 +1158,14 @@
           {
             "id": "e1",
             "name": "Kongresové centrum Praha",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "Jedličkův ústav, ulice Na Pankráci",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }
@@ -1176,14 +1176,14 @@
           {
             "id": "e1",
             "name": "Karlovo náměstí, ulice Resslova",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           },
           {
             "id": "e2",
             "name": "Palackého náměstí, nábřeží",
-            "car": 1,
-            "door": 1
+            "car": 0,
+            "door": 0
           }
         ]
       }

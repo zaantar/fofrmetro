@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { saveStoredData } from '../utils/storage';
+import { saveData } from '../utils/storage';
 
 function DataControls({ data, onImport }) {
     const fileInputRef = useRef(null);
@@ -25,13 +25,13 @@ function DataControls({ data, onImport }) {
         if (!file) return;
 
         const reader = new FileReader();
-        reader.onload = (event) => {
+        reader.onload = async (event) => {
             try {
                 const importedData = JSON.parse(event.target.result);
                 // Basic validation
                 if (importedData.lines && importedData.stations) {
-                    saveStoredData(importedData);
-                    onImport(importedData);
+                    await saveData(importedData);
+                    // onImport(importedData); // Removed to rely on Firestore subscription
                     alert('Data imported successfully!');
                 } else {
                     alert('Invalid data format.');
