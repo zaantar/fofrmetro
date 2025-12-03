@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import { saveData } from '../utils/storage';
-import initialData from '../data/initialData.json';
 
 function DataControls({ data, onImport }) {
     const fileInputRef = useRef(null);
@@ -19,18 +18,6 @@ function DataControls({ data, onImport }) {
 
     const handleImportClick = () => {
         fileInputRef.current.click();
-    };
-
-    const handleReset = async () => {
-        if (window.confirm('Are you sure you want to reset all data to the default state? This cannot be undone.')) {
-            try {
-                await saveData(initialData);
-                alert('Data reset successfully!');
-            } catch (err) {
-                console.error(err);
-                alert('Failed to reset data.');
-            }
-        }
     };
 
     const handleFileChange = (e) => {
@@ -61,7 +48,6 @@ function DataControls({ data, onImport }) {
         <div className="data-controls">
             <button onClick={handleExport} className="control-btn">Export Data</button>
             <button onClick={handleImportClick} className="control-btn">Import Data</button>
-            <button onClick={handleReset} className="control-btn" style={{ borderColor: 'var(--error)', color: 'var(--error)' }}>Reset Data</button>
             <input
                 type="file"
                 ref={fileInputRef}
