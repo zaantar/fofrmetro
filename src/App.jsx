@@ -70,6 +70,13 @@ function App() {
 
     // Store the exit as-is, just remove the internal _isReversed flag
     let cleanExit = { ...exitToSave };
+
+    if (cleanExit._isReversed) {
+      // Transform back to primary coordinates if needed
+      if (cleanExit.car > 0) cleanExit.car = 6 - cleanExit.car;
+      if (cleanExit.door > 0) cleanExit.door = 5 - cleanExit.door;
+    }
+
     delete cleanExit._isReversed;
 
     const existingIndex = exits.findIndex(e => e.id === cleanExit.id);

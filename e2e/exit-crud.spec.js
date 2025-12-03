@@ -144,4 +144,30 @@ test.describe('Exit CRUD Operations', () => {
         await expect(exitCard.locator('.position-box').first()).toContainText('0');
         await expect(exitCard.locator('.position-box').last()).toContainText('0');
     });
+
+    test('should fix bug: car 1 door 4 in reversed view should stay car 1 door 4', async ({ page }) => {
+        // Navigate to Linka A -> To Nemocnice Motol (reversed) -> Můstek
+        await page.click('text=Linka A');
+        await page.click('text=To Nemocnice Motol');
+        await page.click('text=Můstek');
+
+        // Click Add New
+        await page.click('text=+ Add New');
+
+        // Fill in exit details: Car 1, Door 4
+        await page.fill('input[placeholder*="Wenceslas"]', 'Bug Repro 1-4');
+        await page.fill('input[type="number"]', '1');
+        await page.locator('input[type="number"]').nth(1).fill('4');
+
+        // Save
+        await page.click('text=Save Exit');
+        await page.waitForTimeout(2000);
+
+        // Verify exit appears in list with CORRECT values (should be 1 and 4)
+        // Previously it was showing 5 and 1
+        await expect(page.locator('text=Bug Repro 1-4')).toBeVisible();
+        const exitCard = page.locator('.exit-card', { hasText: 'Bug Repro 1-4' });
+        await expect(exitCard.locator('.position-box').first()).toContainText('1');
+        await expect(exitCard.locator('.position-box').last()).toContainText('4');
+    });
 });
