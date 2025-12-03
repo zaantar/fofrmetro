@@ -1,25 +1,27 @@
 import React from 'react';
 
 function LineSelect({ lines, onSelect }) {
-    return (
-        <div className="line-select">
-            <h2>Select Line</h2>
-            <div className="line-grid">
-                {Object.values(lines).map((line) => (
-                    <button
-                        key={line.id}
-                        className="line-card"
-                        style={{ '--line-color': line.color, borderColor: line.color }}
-                        onClick={() => onSelect(line.id)}
-                    >
-                        <div className="line-badge" style={{ backgroundColor: line.color }}>
-                            {line.id}
-                        </div>
-                        <span className="line-name">{line.name}</span>
-                    </button>
-                ))}
-            </div>
-            <style>{`
+  return (
+    <div className="line-select">
+      <h2>Select Line</h2>
+      <div className="line-grid">
+        {Object.values(lines)
+          .sort((a, b) => a.id.localeCompare(b.id))
+          .map((line) => (
+            <button
+              key={line.id}
+              className="line-card"
+              style={{ '--line-color': line.color, borderColor: line.color }}
+              onClick={() => onSelect(line.id)}
+            >
+              <div className="line-badge" style={{ backgroundColor: line.color }}>
+                {line.id}
+              </div>
+              <span className="line-name">{line.name}</span>
+            </button>
+          ))}
+      </div>
+      <style>{`
         .line-grid {
           display: grid;
           gap: 1rem;
@@ -57,8 +59,8 @@ function LineSelect({ lines, onSelect }) {
           font-weight: 600;
         }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 }
 
 export default LineSelect;
