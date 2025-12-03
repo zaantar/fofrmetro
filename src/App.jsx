@@ -9,8 +9,36 @@ import DataControls from './components/DataControls';
 import ErrorBoundary from './components/ErrorBoundary';
 import './index.css';
 
+import initialData from './data/initialData.json';
+
 function App() {
   const [data, setData] = useState(null);
+
+  useEffect(() => {
+    window.forceResetData = async () => {
+      console.log('Resetting data...');
+      try {
+        await saveData(initialData);
+        console.log('Data reset complete!');
+        return 'success';
+      } catch (e) {
+        console.error(e);
+        return 'error';
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (data && data.stations) {
+      console.log('All station keys:', Object.keys(data.stations));
+      const petrinyData = data.stations['Petřiny'];
+      console.log('Petřiny data:', petrinyData);
+      if (petrinyData && petrinyData.exits) {
+        console.log('Petřiny exits:', petrinyData.exits);
+        console.log('Petřiny exits for line A:', petrinyData.exits['A']);
+      }
+    }
+  }, [data]);
   const [selection, setSelection] = useState({
     lineId: null,
     direction: null,
