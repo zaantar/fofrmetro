@@ -10,6 +10,7 @@ import ErrorBoundary from './components/ErrorBoundary';
 import './index.css';
 
 function App() {
+  console.log('Fofrmetro Version: 2025-12-03T10:30:00');
   const [data, setData] = useState(null);
   const [selection, setSelection] = useState({
     lineId: null,
