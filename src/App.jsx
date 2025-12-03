@@ -212,6 +212,9 @@ function App() {
             />
           )}
         </main>
+        <footer style={{ textAlign: 'center', padding: '20px', color: '#666', fontSize: '0.8rem' }}>
+          v1.0.2 - {new Date().toLocaleDateString()}
+        </footer>
       </div>
     </ErrorBoundary>
   );
